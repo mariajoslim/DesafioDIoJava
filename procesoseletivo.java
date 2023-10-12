@@ -13,10 +13,10 @@ public class ProcessoSeletivo {
         analisarCandidato(2200.0);
         analisarCandidato(2000.0);
 
-        System.out.println("\n-- Seleção de candidatos --");
+        System.out.println("\n Selecionar  candidatos ");
         selecaoCandidatos();
 
-        System.out.println("\n-- Imprimir Selecionados --");
+        System.out.println("\n Imprimir Selecionados ");
         imprimirSelecionados();
 
         String[] candidatos = {"Maria", "Pedro", "Clara", "Sergio", "Janile", "Lucas", "Marcella", "Elton", "Tatiana", "Diego"};
@@ -28,9 +28,9 @@ public class ProcessoSeletivo {
     static void analisarCandidato(double salarioPretendido) {
         double salarioBase = 2000.0;
         if(salarioBase > salarioPretendido) {
-            System.out.println("LIGAR PARA O CANDIDATO");
+            System.out.println("CONTACTAR  O CANDIDATO");
         }else if(salarioBase == salarioPretendido) {
-            System.out.println("LIGAR PARA O CANDIDATO COM CONTRAPROPOSTA");
+            System.out.println("COMUNICAR O CANDIDATO COM CONTRAPROPOSTA");
         }else {
             System.out.println("AGUARDANDO DEMAIS CANDIDATOS");
         }
@@ -49,7 +49,7 @@ public class ProcessoSeletivo {
             System.out.println("Candidato: " + candidato + " - valor: " + salarioPretendido);
 
             if(salarioBase >= salarioPretendido) {
-                System.out.println(candidato + " selecionado para a vaga!");
+                System.out.println(candidato + " escolha para a vaga!");
                 candidatosSelecionados++;
             }
 
@@ -63,7 +63,7 @@ public class ProcessoSeletivo {
     }
 
     static void imprimirSelecionados() {
-        String[] candidatos = {"Maria", "João", "Ana", "Pedro", "Clara", "Lucas", "Isabella", "Bruno", "Carolina", "Gustavo"};
+        String[] candidatos = {"Maria", "Pedro", "Clara", "Sergio", "Janile", "Lucas", "Marcella", "Elton", "Tatiana", "Diego"};
         System.out.println("Imprimindo a lista de candidatos de acordo com o índice");
 
         for (int i = 0; i < candidatos.length; i++) {
